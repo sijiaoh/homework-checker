@@ -1,8 +1,8 @@
-const { check, defaultConditions, createKeywordCondition } = require('./lib');
+const { check, defaultConditions, createKeywordsCondition } = require('./lib');
 
 const conditions = [
     ...defaultConditions,
-    createKeywordCondition(['WSAStartup', 'WSACleanup', 'gethostbyname']),
+    createKeywordsCondition(['WSAStartup', 'WSACleanup', 'gethostbyname']),
 ];
 
 check(conditions);
